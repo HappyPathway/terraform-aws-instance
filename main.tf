@@ -2,7 +2,7 @@
 resource "aws_instance" "instance" {
   count                   = local.linux_instance ? var.instance_count : 0
   ami                     = var.ami
-      instance_type           = var.instance_type
+  instance_type           = var.instance_type
   disable_api_termination = tobool(var.troubleshoot)
   disable_api_stop        = tobool(var.troubleshoot)
   subnet_id               = var.subnet
