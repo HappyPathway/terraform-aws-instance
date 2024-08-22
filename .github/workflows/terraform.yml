@@ -13,8 +13,4 @@ jobs:
       with:
         terraform_version: 1.9.1
         terraform_api: app.terraform.io
-        github_username: djaboxx
-        github_email: dave@roknsound.com
-        github_org: HappyPathway
-        github_user_token: ${{ secrets.GH_TOKEN }}
         tfe_token: ${{ secrets.TFE_TOKEN }}
