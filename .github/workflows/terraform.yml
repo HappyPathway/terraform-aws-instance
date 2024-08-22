@@ -6,7 +6,7 @@ on:
     
 jobs:
   terraform:
-    uses: HappyPathway/centralized-actions/.github/workflows/terraform.yml@main
+    uses: HappyPathway/centralized-actions/.github/workflows/terraform-test.yml@main
     with:
       terraform_version: 1.9.1
       terraform_api: app.terraform.io
