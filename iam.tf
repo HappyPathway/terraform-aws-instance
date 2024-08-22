@@ -11,7 +11,7 @@ data "aws_iam_policy_document" "assume_role" {
 }
 
 resource "aws_iam_role" "instance" {
-    name               = lookup(var.required_tags, "Name")
+  name               = lookup(var.required_tags, "Name")
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 }
 
