@@ -12,7 +12,7 @@ resource "aws_instance" "linux" {
   tags                        = var.required_tags
   associate_public_ip_address = var.enable_public_ip
   user_data_replace_on_change = var.user_data_replace_on_change
-  user_data                    = var.user_data
+  user_data                   = var.user_data
   root_block_device {
     delete_on_termination = var.root_block_device.delete_on_termination
     encrypted             = var.root_block_device.encrypted
