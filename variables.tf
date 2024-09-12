@@ -6,10 +6,10 @@ variable "ami" {
 variable "config" {
   description = "Directory and script details for automation"
   type = object({
-    src    = string
-    content   = string
-    script = string
-    args   = string
+    content = string
+    dest    = string
+    script  = string
+    args    = string
   })
   default = null
 }
