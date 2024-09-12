@@ -37,7 +37,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_ami"></a> [ami](#input\_ami) | The AMI to use | `string` | n/a | yes |
-| <a name="input_config"></a> [config](#input\_config) | Directory and script details for automation | <pre>object({<br>    content = string<br>    dest    = string<br>    script  = string<br>    args    = string<br>  })</pre> | `null` | no |
+| <a name="input_config"></a> [config](#input\_config) | Directory and script details for automation | <pre>object({<br>    content = string<br>    script  = string<br>    args    = string<br>  })</pre> | `null` | no |
 | <a name="input_ebs_block_devices"></a> [ebs\_block\_devices](#input\_ebs\_block\_devices) | The EBS block devices to attach | <pre>list(object({<br>    delete_on_termination = optional(bool, true)<br>    device_name           = string<br>    encrypted             = optional(bool, false)<br>    iops                  = optional(number, null)<br>    kms_key_id            = optional(string, null)<br>    snapshot_id           = optional(string, null)<br>    tags                  = optional(map(string), {})<br>    throughput            = optional(number, null)<br>    volume_size           = optional(number, 100)<br>    volume_type           = optional(string, "gp2")<br>  }))</pre> | `[]` | no |
 | <a name="input_enable_public_ip"></a> [enable\_public\_ip](#input\_enable\_public\_ip) | Enable public IP | `bool` | `false` | no |
 | <a name="input_iam_instance_profile"></a> [iam\_instance\_profile](#input\_iam\_instance\_profile) | The IAM instance profile to use | `string` | `null` | no |
