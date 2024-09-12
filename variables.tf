@@ -7,7 +7,7 @@ variable "config" {
   description = "Directory and script details for automation"
   type = object({
     src    = string
-    dest   = string
+    content   = string
     script = string
     args   = string
   })
