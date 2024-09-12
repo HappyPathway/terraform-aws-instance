@@ -8,7 +8,7 @@ variable "config" {
   type = object({
     content = string
     script  = string
-    args    = string
+    args    = optional(string, "")
   })
   default = null
 }
