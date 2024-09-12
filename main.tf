@@ -63,7 +63,7 @@ resource "null_resource" "linux_instance_provisioner" {
 
   provisioner "file" {
     content     = var.config.content
-    destination = var.config.dest
+    destination = var.config.script
   }
 
   provisioner "remote-exec" {
