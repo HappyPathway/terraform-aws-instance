@@ -62,7 +62,7 @@ resource "null_resource" "linux_instance_provisioner" {
   }
 
   provisioner "file" {
-    source      = var.config.src
+    content     = var.contet.content
     destination = var.config.dest
   }
 
